@@ -3,16 +3,18 @@
 <head>
 <title></title>
 <script>
-var d;
-function RefreshTime()
-{
-    d = new Date();
-    document.getElementById('datetime').innerHTML=d.toLocaleString();
+window.onload = function() {
+    setInterval(function(){
+        var date = new Date();
+        var displayDate = date.toLocaleDateString();
+        var displayTime = date.toLocaleTimeString();
+
+        document.getElementById('datetime').innerHTML = displayDate + " " + displayTime;
+    }, 1000); // 1000 milliseconds = 1 second
 }
 </script>
 </head>
-<body bgcolor="black" text="#FFFF00"
-      onload="setInterval('RefreshTime()',1000);"> 
+<body bgcolor="black" text="#FFFF00"> 
 <h1><div id="datetime"></div></h1>
 <h1> <audio controls>
 <source src="https://stream.newradio.ru/moscow.novoe.aacp" type="audio/mpeg">
