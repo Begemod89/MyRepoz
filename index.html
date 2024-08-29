@@ -17,21 +17,42 @@ window.onload = function() {
 <body bgcolor="black" text="#FFFF00"> 
 <h1 align="center"><div id="datetime"></div></h1>
 
-<h1> <audio controls>
+<h1> <audio controls id="myaudio1">
 <source src="https://stream.newradio.ru/moscow.novoe.aacp" type="audio/mpeg">
 <source src="https://stream.newradio.ru/moscow.novoe.aacp" type="audio/ogg">
 </audio> <b>Новое радио</b></h1><br>
+<script>
+  var audio = document.getElementById("myaudio1");
+  audio.volume = 0.1;
+</script>
 <br>
-<h1> <audio controls>
+<h1> <audio controls id="myaudio2">
+<source src="http://radiorecord.hostingradio.ru/chil96.aacp" type="audio/mpeg">
+<source src="http://radiorecord.hostingradio.ru/chil96.aacp" type="audio/ogg">
+</audio> <b>Record-Chillout</b></h1><br>
+<script>
+  var audio = document.getElementById("myaudio2");
+  audio.volume = 0.1;
+</script>
+<br>
+<h1> <audio controls id="myaudio3">
 <source src="https://stream.relaxfm.ee/cafe_HD" type="audio/mpeg">
 <source src="https://stream.relaxfm.ee/cafe_HD" type="audio/ogg">
 <source src="https://stream.relaxfm.ee/cafe_HD" type="audio/mp3">
 </audio> <b>Relax FM</b></h1><br>
+<script>
+  var audio = document.getElementById("myaudio3");
+  audio.volume = 0.1;
+</script>
 <br>
-<h1> <audio controls>
+<h1> <audio controls id="myaudio4">
 <source src="https://maximum.hostingradio.ru/rammstein96.aacp" type="audio/mpeg">
 <source src="https://maximum.hostingradio.ru/rammstein96.aacp" type="audio/ogg">
 </audio> <b>Maximum - Rammstein</b></h1><br>
+<script>
+  var audio = document.getElementById("myaudio4");
+  audio.volume = 0.1;
+</script>
     <h1 align="center"><font color="red"></font></h1>
 </body>  
 </html> 
